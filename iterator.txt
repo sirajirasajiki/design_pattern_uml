@@ -1,0 +1,36 @@
+@startuml
+interface Aggregate{
+  iterator()
+}
+
+interface Iterator{
+  hasNext()
+  next()
+}
+
+class Subject {
+  students
+  last
+  getStudent()
+  addStudent()
+  getNumberOfStudents()
+  iterator()
+}
+
+class SubjectIterator{
+  subject
+  index
+  hasNext()
+  next()
+}
+
+class Student {
+  name
+  studentNumber
+}
+Aggregate --> Iterator :creates
+Aggregate <|.. Subject
+Iterator <|.. SubjectIterator
+Subject <--* SubjectIterator
+Subject <--* Student
+@enduml
