@@ -4,29 +4,29 @@ interface Aggregate{
 }
 
 interface Iterator{
-  hasNext()
+  has_next()
   next()
 }
 
 class Subject {
   students
   last
-  getStudent()
-  addStudent()
-  getNumberOfStudents()
+  get_student()
+  add_student()
+  get_number_of_students()
   iterator()
 }
 
 class SubjectIterator{
   subject
   index
-  hasNext()
+  has_next()
   next()
 }
 
 class Student {
   name
-  studentNumber
+  student_number
 }
 Aggregate --> Iterator :creates
 Aggregate <|.. Subject
