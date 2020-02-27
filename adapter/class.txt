@@ -2,7 +2,7 @@
 class Main{
 }
 
-interface Time{
+interface TimeStr{
   get_now_unix_time()
 }
 
@@ -14,8 +14,8 @@ class GetTimeStr{
   get_now_unix_time_str()
 }
 
-Main --> Time :Uses
-Time <|.. GetTime
-GetTime --|> GetTimeStr
+Main --> TimeStr :Uses
+TimeStr <|.. GetTimeStr
+GetTime <|-- GetTimeStr
 
 @enduml
