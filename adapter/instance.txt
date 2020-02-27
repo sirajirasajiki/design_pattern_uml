@@ -7,11 +7,11 @@ interface TimeStr{
 }
 
 class GetTime {
-  unix_time
   get_now_unix_time()
 }
 
 class GetTimeStr{
+  ins
   get_now_unix_time_str()
 }
 
