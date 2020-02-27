@@ -3,17 +3,14 @@ class Main{
 }
 
 interface Time{
-  unix_time
   get_now_unix_time()
 }
 
 class GetTime {
-  unix_time
   get_now_unix_time()
 }
 
 class GetTimeStr{
-  unix_time
   get_now_unix_time_str()
 }
 
