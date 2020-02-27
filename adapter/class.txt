@@ -3,7 +3,7 @@ class Main{
 }
 
 interface TimeStr{
-  get_now_unix_time()
+  get_now_unix_time_str()
 }
 
 class GetTime {
