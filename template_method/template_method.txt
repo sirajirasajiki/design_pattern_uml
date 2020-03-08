@@ -1,0 +1,26 @@
+@startuml
+interface AbstractDispaly{
+  open()
+  print()
+  close()
+  display()
+}
+
+
+class CharDisplay {
+  open()
+  print()
+  close()
+}
+
+class StringDisplay{
+  open()
+  print()
+  close()
+  printLine()
+}
+
+
+AbstractDispaly <|-- CharDisplay
+AbstractDispaly <|-- StringDisplay
+@enduml
