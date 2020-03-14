@@ -1,7 +1,7 @@
 @startuml
 class Factory{
-  registerProduct()
-  createProduct()
+  register_product()
+  create_product()
   create()
 }
 
@@ -11,15 +11,15 @@ class Product{
 
 class PCFactory {
   owners
-  registerProduct()
-  createProduct()
-  getoOwners()
+  register_product()
+  create_product()
+  get_owners()
 }
 
 class PCProduct{
   owner
   use()
-  getOwner()
+  get_owner()
 }
 
 Factory --> Product :Creates
