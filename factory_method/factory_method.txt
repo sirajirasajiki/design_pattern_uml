@@ -1,0 +1,29 @@
+@startuml
+class Factory{
+  registerProduct()
+  createProduct()
+  create()
+}
+
+class Product{
+  use()
+}
+
+class PCFactory {
+  owners
+  registerProduct()
+  createProduct()
+  getoOwners()
+}
+
+class PCProduct{
+  owner
+  use()
+  getOwner()
+}
+
+Factory --> Product :Creates
+Product <|-- PCProduct
+Factory <|-- PCFactory
+
+@enduml
