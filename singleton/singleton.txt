@@ -1,0 +1,9 @@
+@startuml
+class Mahjong{
+  - mahjong
+  - score
+  + get_instance()
+  + get_score()
+  + score_calculation()
+}
+@enduml
